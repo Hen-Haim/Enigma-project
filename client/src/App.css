@@ -1,0 +1,86 @@
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 250px 300px;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 400px;
+}
+
+.app > main {
+  grid-row: 2 / 2;
+  grid-column: span 12;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 500px;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu";
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main > .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.app > section > input {
+  grid-row: 1 / 2;
+  grid-column: span 12;
+  align-self: center;
+  height: 40px;
+  font-size: 25px;
+  width: 250px;
+  margin-left: 100px;
+  text-align: center;
+  border: solid rgba(128, 128, 128, 0.452) 2px;
+}
+
+.selling {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 2px red;
+  border-radius: 15%;
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+  cursor: pointer;
+
+}
+.selling:hover {
+  opacity: 0.3;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 2px green;
+  border-radius: 15%;
+  width: 150px;
+  height: 150px;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.selling >p, .orders>p{
+  text-align: center;
+  font-family: fantasy;
+}
+
+.server-notes{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.orders:hover {
+  opacity: 0.3;
+}
